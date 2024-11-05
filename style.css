@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: brown;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-color: blanchedalmond;
+    background-image: url("/horse.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(117, 110, 110, 0.364);
+    
+}
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    /* height: 120px; */
+    padding: 0 10vw;
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text h1{
+    font-size: 8vw;
+    font-weight: 500;
+}
+.text-right{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+}
+
+.text-right .t3{ 
+    display: flex;
+    gap:2vw ;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 33%; */
+}
+.t3 i{
+    font-size: 19px;
+}
+.bottom{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    background-color: burlywood;
+}
+
+.box1{
+    background-color: white;
+    width: 25%;
+    min-height: inherit;
+    padding: 4vw 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box1 h5{
+    font-size: 25px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+.box1 p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+.arrow{
+    display: flex;
+    gap: 1vw;
+}
+.arrow i{
+    margin-top: 40px;
+    font-size: 2vw;
+    opacity: 0.5;
+}
+.box2{
+    background-image: url("/person.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.box2 i{
+    font-size: 5vw;
+    font-weight: lighter;
+}
+.box3{
+    background-color: crimson;
+    width: 20%;
+    min-height: inherit;
+}
+.b-top{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2vw 2vw;
+    width: 100%;
+    min-height: 20vh;
+    background-color: orangered;
+    color: white;
+}
+
+.b-top h5{
+    font-size: 18px;
+    margin-bottom: 10px
+}
+.b-bottom{
+    width: 100%;
+    min-height: 40vh;
+    background-image: url("/orange.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box4{
+    padding: 3vw 4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(22, 21, 21);
+    width: 30%;
+    min-height: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box4 h5{
+    font-size: 30px;
+}
+.box4 .person1 {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.box4 .person2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.person1 .profile{
+    background-image: url("/person1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.person2 .profile{
+    background-image: url("/person2.jpg");
+    background-size: cover;
+    background-position: center
+}
+
+@media (max-width:500px) {
+    .top .overlay{
+        flex-direction: column;
+    }
+    .top .overlay .text{
+        align-items: flex-start;
+        flex-direction:column ;
+       
+    }
+    .top .overlay .text h1{
+        font-size: 25vw;
+        font-weight: 400;
+    }
+    .top .overlay .text .text-right{
+        align-items: flex-start;
+        flex-direction:column ;
+        height: 40%;
+        gap: 6vw;
+    }
+    .top .overlay .text .text-right .t1{
+        width: 100%;
+    }
+
+  
+    .text-right .t3 i{
+        font-size:30px;
+    } 
+  
+    .bottom{
+        flex-direction: column;
+        
+
+    }
+    .bottom .box1{
+        width: 100%;
+    }
+    .bottom .box1 h5{
+        font-size: 15vw;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .bottom .box1 p{
+        font-size: 10vw;
+        margin-left: 20px;
+        /* margin-top: 20px; */
+    }
+    .bottom .box1 .arrow{
+        padding: 20px;
+    }
+    .bottom .box1 i{
+        font-size: 45px;
+        
+    }
+    .bottom .box2{
+        width: 100%;
+    }
+    .bottom .box2 i{
+        font-size: 20vw;
+    }
+    .bottom .box3{
+        flex-direction: column;
+        width: 100%;
+    }
+    .bottom .box3 .b-top{
+        padding: 10vw 10vw;
+    }
+    .bottom .box3 .b-top h5{
+        font-size: 40px;
+    }
+    .bottom .box3 .b-top p{
+        font-size: 30px;
+    }
+    .bottom .box4{
+        align-items: center;
+        width: 100%;
+    }
+    .bottom .box4 h5{
+        font-size: 50px;
+    }
+    .bottom .box4 .person1{
+        /* gap: 5px; */
+        justify-content: space-evenly;
+    }
+    .bottom .box4 .person1 .profile{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .person1 .comments{
+        font-size: 25px;
+    }
+    .bottom .box4 .person2{
+        justify-content: space-evenly;
+    }
+    .bottom .box4 .person2 .profile{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .person2 .comments{
+        font-size: 25px;
+    }
+   
+}
